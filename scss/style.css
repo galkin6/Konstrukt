@@ -1,0 +1,418 @@
+@charset "UTF-8";
+@import url(../css/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #0a0a0a;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 941px;
+  padding: 0 10px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*фуллскрин экран*/
+.header__wrapper {
+  background: url(../image/bg.jpg) no-repeat center/cover;
+  min-height: 100svh;
+  padding: 25px 0 0 0;
+}
+
+.header__logo {
+  margin: 0 auto 297px auto;
+}
+
+.logo {
+  display: block;
+}
+
+.header__title,
+.header__span-title {
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.header__span-title {
+  text-transform: none;
+  font-size: 16px;
+}
+
+.header__scroll-btn {
+  font-weight: 700;
+  font-size: 11px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin: 221px 0 0 0;
+  transition: all 1s ease-in;
+}
+
+.header__box-line {
+  position: relative;
+  margin: 0 0 57px 0;
+}
+.header__box-line::after {
+  content: "";
+  width: 100%;
+  display: block;
+  border: 1px solid rgb(189, 189, 189);
+  position: absolute;
+  bottom: 0;
+}
+
+/*меню*/
+.header__burger {
+  display: none;
+}
+
+.header__wrapper-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(219, 219, 219, 0.9058823529);
+  width: 100%;
+  z-index: 5;
+}
+
+.header__menu-logo {
+  flex: 0 0 50%;
+  margin-left: 20px;
+}
+
+.header__menu {
+  margin-right: 20px;
+  flex: 0 0 auto;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 0 48px;
+}
+
+.header__menu_item {
+  text-transform: uppercase;
+  color: #48555B;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+.header__menu_item:hover {
+  color: rgba(0, 164, 229, 0.7882352941);
+}
+
+/*Основной контент*/
+.main {
+  min-height: 100svh;
+  flex: 1 1 auto;
+}
+
+.main__title-section {
+  margin: 0 0 80px 0;
+  text-align: center;
+}
+
+.main__title-capabilities::after,
+.main__title-section:after {
+  content: "";
+  display: block;
+  width: 50px;
+  border-bottom: 2px solid #00A4E5;
+  margin: 0 auto;
+  margin-top: 13px;
+}
+
+.title-h2 {
+  font-size: 18px;
+}
+
+.main__wrapper-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 80px;
+  margin: 0 0 118px 0;
+}
+
+.main__block-text {
+  flex: 0 0 42%;
+}
+
+.main__text-1 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.5em;
+  margin: 0 0 30px 0;
+}
+
+.main__text-2 {
+  line-height: 1.5em;
+}
+
+.main__block-image {
+  flex: 0 0 58%;
+  display: flex;
+  gap: 0 20px;
+  align-self: flex-end;
+}
+
+/*позиционирование текста*/
+.main__wrapper-position {
+  position: relative;
+}
+
+.text {
+  display: block;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  top: 15px;
+  left: 14px;
+}
+.text span {
+  display: block;
+}
+
+/*позиционирование текста*/
+/*Вторая секция*/
+.main__capabilities-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 50px 0;
+}
+
+.main__title-capabilities::after {
+  margin: 13px 0 0 0;
+}
+
+.main__title-capabilities {
+  margin: 0 155px 0 0;
+  flex: 0 0 25, 33%;
+}
+
+.main__text-capabilities {
+  flex: 0 0 48%;
+  margin: 0 32px 0 0;
+  line-height: 1.5em;
+}
+
+.main__btn-services {
+  display: inline-block;
+  min-width: 150px;
+  height: 100%;
+  padding: 11px 30px;
+  text-align: center;
+  background: #00A4E5;
+  color: #fff;
+  font-weight: 800;
+  flex: 0 0 25%;
+}
+
+.main__capabilities-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 30px;
+}
+
+.main__capabilities-img {
+  margin: 0 0 25px 0;
+}
+
+.main__capabilities-item {
+  flex: 0 0 33, 33%;
+  border: 1px solid #909090;
+  padding: 38px 23px;
+}
+
+.main__capabilities-title {
+  font-size: 16px;
+  margin: 0 0 13px 0;
+  max-width: 250px;
+}
+
+.main__capabilities-text {
+  max-width: 250px;
+}
+
+.main__capabilities-question {
+  background: url(../image/bg-get-in-touch.jpg) no-repeat center/cover;
+  padding: 235px 0 235px 0;
+}
+
+.main__title-question {
+  font-size: 30px;
+  max-width: 350px;
+  margin: 0 auto 35px auto;
+  text-align: center;
+}
+
+.main__btn-question {
+  display: block;
+  margin: 0 auto;
+  width: 153px;
+}
+
+/*ФУТЕР*/
+.footer {
+  background: #171819;
+  color: #fff;
+}
+
+.footer-top {
+  margin: 30px 0;
+}
+
+.footer__form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 42px;
+}
+
+.footer__h3 {
+  font-family: "BebasNeue", serif;
+  font-size: 22px;
+  margin: 0 86px 0 0;
+}
+
+.footer__form {
+  display: flex;
+}
+
+.footer__input-email {
+  min-width: 250px;
+  max-height: 100%;
+  padding: 0 0 0 15px;
+}
+
+.footer__btn {
+  display: block;
+  max-height: 100%;
+  padding: 10px;
+  font-weight: normal;
+  font-family: "BebasNeue", serif;
+}
+
+.footer-botom {
+  display: flex;
+  margin: 70px 0 40px 0;
+  justify-content: space-between;
+}
+
+.footer__about {
+  font-family: "BebasNeue", serif;
+  margin: 0 70px 0 0;
+}
+
+.footer__company {
+  font-size: 11px;
+}
+
+.footer__logo {
+  margin: 20px 0;
+}
+
+.footer__about-text {
+  max-width: 195px;
+}
+
+.footer__description {
+  font-size: 11px;
+  text-align: center;
+  margin: 0 0 23px 0;
+}
+
+/*ФУТЕР, БЛОК С ССЫЛКАМИ*/
+.footer {
+  font-size: 11px;
+}
+
+.footer__menu a {
+  color: #fff;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.footer__list-item_span,
+.footer__company {
+  display: block;
+  font-family: "BebasNeue", serif;
+  margin: 0 0 10px 0;
+}
+
+.footer__menu-list {
+  display: flex;
+}
+
+.footer__main-links {
+  margin: 0 34px 0 0;
+}
+
+.footer__links-faq {
+  margin: 0 38px 0 0;
+}
+
+.footer__links-blog {
+  margin: 0 58px 0 0;
+}
+
+.footer__contacts-text {
+  max-width: 110px;
+  line-height: 1.5em;
+  margin: 0 46px 0 0;
+}
+.footer__contacts-text a {
+  display: block;
+  color: #fff;
+  margin: 20px 0;
+}
+.footer__contacts-text span {
+  display: block;
+}
+
+.footer__wrapper-contacts {
+  display: flex;
+}
+
+.footer__social {
+  align-self: flex-start;
+  display: flex;
+}
+.footer__social a {
+  margin: 0 37px 0 0;
+}
+.footer__social a:last-child {
+  margin-right: 0;
+}
+
+.button-up {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 0 auto;
+  opacity: 0.2;
+  margin-bottom: 5px;
+}
+
+/*Футер*/
