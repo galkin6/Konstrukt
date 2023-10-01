@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <title>Konstrukt - OUR STORY</title>
 </head>
 
@@ -17,7 +17,7 @@
 
     <header class="header" id="header">
         <div class="header__wrapper">
-            <a href="#"><img src="/image/project-logo.svg" alt="logotype" class="header__logo logo"></a>
+            <a href="#"><img src="image/project-logo.svg" alt="logotype" class="header__logo logo"></a>
             <h1 class="header__title">
                 Partner with construct
                 <span class="header__span-title">
@@ -29,23 +29,20 @@
         <div class="header__box-line" id="block-1">
             <div class="container">
                 <div class="header__wrapper-menu">
-                    <a href="#"><img src="/image/logo-black.svg" alt="logotype" class="header__menu-logo logo"></a>
+                    <a href="#"><img src="image/logo-black.svg" alt="logotype" class="header__menu-logo logo"></a>
 
                     <nav class="header__menu">
                         <ul class="header__menu-list">
-                            <a href="#">
+                            <a href="#header">
                                 <li class="header__menu_item">Home</li>
                             </a>
-                            <a href="#">
+                            <a href="#about">
                                 <li class="header__menu_item">About</li>
                             </a>
-                            <a href="#">
+                            <a href="#services">
                                 <li class="header__menu_item">Services</li>
                             </a>
-                            <a href="#">
-                                <li class="header__menu_item">Work</li>
-                            </a>
-                            <a href="#">
+                            <a href="#contact">
                                 <li class="header__menu_item">Contact</li>
                             </a>
                         </ul>
@@ -63,7 +60,7 @@
 
         <section class="main__section">
             <div class="container">
-                <div class="main__our-story">
+                <div class="main__our-story" id="about">
                     <h2 class="main__title main__title-section">
                         OUR STORY
                     </h2>
@@ -82,20 +79,20 @@
                         </div>
                         <div class="main__block-image">
                             <div class="main__wrapper-position">
-                                <img class="main__img" src="/image/plan.jpg" alt="plan">
+                                <img class="main__img" src="image/plan.jpg" alt="plan">
                                 <span class="text">
                                     we <span>plan</span>
                                 </span>
                             </div>
 
                             <div class="main__wrapper-position">
-                                <img class="main__img" src="/image/manage.jpg" alt="manage">
+                                <img class="main__img" src="image/manage.jpg" alt="manage">
                                 <span class="text">
                                     we <span>manage</span>
                                 </span>
                             </div>
                             <div class="main__wrapper-position">
-                                <img class="main__img" src="/image/deliver.jpg" alt="deliver">
+                                <img class="main__img" src="image/deliver.jpg" alt="deliver">
                                 <span class="text">
                                     we <span>build</span>
                                 </span>
@@ -120,7 +117,7 @@
 
                     <div class="main__capabilities-bottom">
                         <div class="main__capabilities-item">
-                            <img class="main__capabilities-img" src="/image/section-img-1.svg" alt="capabilities-1">
+                            <img class="main__capabilities-img" src="image/section-img-1.svg" alt="capabilities-1">
                             <h3 class="main__capabilities-title">
                                 PROJECT AND CONSTRUCTION MANAGEMENT
                             </h3>
@@ -130,7 +127,7 @@
                             </p>
                         </div>
                         <div class="main__capabilities-item">
-                            <img class="main__capabilities-img" src="/image/section-img-2.svg" alt="capabilities-1">
+                            <img class="main__capabilities-img" src="image/section-img-2.svg" alt="capabilities-1">
                             <h3 class="main__capabilities-title">
                                 PROJECT AND CONSTRUCTION MANAGEMENT
                             </h3>
@@ -140,7 +137,7 @@
                             </p>
                         </div>
                         <div class="main__capabilities-item">
-                            <img class="main__capabilities-img" src="/image/section-img-3.svg" alt="capabilities-1">
+                            <img class="main__capabilities-img" src="image/section-img-3.svg" alt="capabilities-1">
                             <h3 class="main__capabilities-title">
                                 PROJECT AND CONSTRUCTION MANAGEMENT
                             </h3>
@@ -154,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="main__capabilities-question">
+            <div class="main__capabilities-question" id="services">
                 <h2 class="main__title-question">
                     Want to build something amazing?
                 </h2>
@@ -166,16 +163,16 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-top">
                 <div class="footer__form-wrapper">
                     <h3 class="footer__h3">
                         Newsletter Signup
                     </h3>
-                    <form action="#" method="get" class="footer__form">
-                        <input type="email" placeholder="test@youremail.com" class="footer__input-email">
-                        <button class="footer__btn main__btn-services">SIGN UP </button>
+                    <form action="sender.php" method="post" class="footer__form">
+                        <input type="email" name="name" placeholder="test@youremail.com" class="footer__input-email" required>
+                        <button type="button" class="footer__btn main__btn-services">SIGN UP </button>
                     </form>
                 </div>
             </div>
@@ -185,7 +182,7 @@
                         Company
                     </span>
                     <div class="footer__logo">
-                        <img src="/image/project-logo.svg" alt="logo">
+                        <img src="image/project-logo.svg" alt="logo">
                     </div>
                     <div class="footer__about-text">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
@@ -254,13 +251,13 @@
                         </p>
                         <div class="footer__social">
                             <a href="#">
-                                <img src="/image/icons/facebook.svg" alt="facebook">
+                                <img src="image/icons/facebook.svg" alt="facebook">
                             </a>
                             <a href="#">
-                                <img src="/image/icons/twitter.svg" alt="facebook">
+                                <img src="image/icons/twitter.svg" alt="facebook">
                             </a>
                             <a href="#">
-                                <img src="/image/icons/google.svg" alt="facebook">
+                                <img src="image/icons/google.svg" alt="facebook">
                             </a>
                         </div>
                     </div>
@@ -271,7 +268,7 @@
 
             <div class="footer__description">
                 <a href="#header" class="button-up">
-                    <img src="/image/icons/arrow-up.svg" alt="">
+                    <img src="image/icons/arrow-up.svg" alt="">
                 </a>
                 <span>© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</span>
             </div>
@@ -283,7 +280,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
 
 </body>
 
